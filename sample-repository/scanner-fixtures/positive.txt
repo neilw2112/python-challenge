@@ -1,0 +1,2 @@
+# Synthetic positive fixture. The value below is not a real credential.
+password=synthetic-password-value

@@ -1,0 +1,13 @@
+{
+  "clean": {
+    "file": "clean.txt",
+    "finding_count": 0
+  },
+  "positive": {
+    "file": "positive.txt",
+    "finding_count": 1,
+    "line": 2,
+    "rule_id": "password-assignment",
+    "redacted_match": "password=[REDACTED]"
+  }
+}

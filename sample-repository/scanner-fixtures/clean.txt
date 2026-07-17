@@ -1,0 +1,3 @@
+# Synthetic clean fixture: this file contains no password assignments.
+environment = "test"
+message = "hello from synthetic data"
