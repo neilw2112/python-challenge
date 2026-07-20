@@ -17,3 +17,10 @@ All notable changes to this project are documented here.
 - Synthetic `password=` and `api_key=` repository findings with relative paths.
 - Exclusion of Git metadata, virtual environments, cache directories, generated files, and scanner output.
 - Distinct CLI exit codes for clean scans, findings, and scan errors.
+- Stable `access-token-assignment` and `client-secret-assignment` detection rules with synthetic fixtures.
+- Centralized rule registry so new detection rules do not require traversal, reporting, or CLI changes.
+- Explicit exact-match ignores for paths, rule identifiers, and individual findings, with visible ignored-finding summaries.
+- Expanded test coverage for every rule, CLI ignore handling, malformed text, redaction, and unsupported file types.
+- Added metadata and failure logging with source values excluded from log messages.
+- Added a concise design-decision record covering architecture, scanning scope, safety, ignores, and exit codes.
+- Added a basic GitHub Actions test workflow for pull requests and pushes to `main`.
