@@ -1,0 +1,29 @@
+{
+  "repository": "synthetic-sample-repository",
+  "findings": [
+    {
+      "rule": "synthetic-token",
+      "path": "app/config.py",
+      "line": 4,
+      "severity": "high",
+      "description": "Synthetic token-like test value; never use as a real credential."
+    },
+    {
+      "rule": "todo-marker",
+      "path": "docs/example.md",
+      "line": 5,
+      "severity": "low",
+      "description": "Intentional TODO marker used to exercise text finding detection."
+    }
+  ],
+  "excluded_paths": [
+    {
+      "path": "generated/example.py",
+      "reason": "Generated artifacts are excluded from analysis.",
+      "known_false_positive": {
+        "rule": "todo-marker",
+        "line": 3
+      }
+    }
+  ]
+}
